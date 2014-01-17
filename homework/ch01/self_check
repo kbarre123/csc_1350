@@ -1,0 +1,26 @@
+CHAPTER 1 SELF CHECK:
+
+4. Where is a program stored when it is not currently running? Secondary storage (i.e. hard drive).
+5. Which part of the computer carries out arithmetic operations, such as addition
+and multiplication? Arithmetic Logical Unit (ALU) within the CPU.
+6. A modern smartphone is a computer, comparable to a desktop computer. Which
+components of a smartphone correspond to those shown in Figure 3?
+- CPU: The CPU of the smartphone.
+- Storage: The harddrive and RAM of the smartphone.
+- Peripherals: mouse=capacitive touch screen/trackball; keyboard=virtual on-screen keyboard or physical one; mic=mic; camera; accelerometer; GPS chip.
+- Network: GPRS chip.
+7. What are the two most important benefits of the Java language? Safety and portability. Safety b/c the JVM acts as a buffer b/t the machine's hardware and any potentially malicious/un-safe code. The program will terminate and an accurate error message will be returned before your machine breaks. Portability b/c the same Java program will run, w/o change, on Windows, UNIX, Linux or Macs. This is possible b/c Java isn't compiled directly into machine code. Instead, it is converted into instructions for the Java Virtual Machine, a program that simulates a real CPU. 
+8. How long does it take to learn the entire Java library? That's nearly impossible. There are packages for use with everything from graphics, user-interface design, cryptography, networking, sound, database storage, etc. The best we can hope for is to learn how to learn how to use new packages when required by specific tasks at hand.
+9. Where is the HelloPrinter.java file stored on your computer? ~/Documents/lsu/csc_1350/homework/ch01/
+10. What do you do to protect yourself from data loss when you work on programming projects? Version control.
+11. How do you modify the HelloPrinter program to greet you instead? Change "World" to "KC!".
+12. How would you modify the HelloPrinter program to print the word “Hello” vertically? See /SC12/HelloWorld.
+13. Would the program continue to work if you replaced line 7 with this statement 'System.out.println(Hello);'? No, b/c the compiler would try to interpret Hello not as a string argument for the println method but as something else that it doesn't know what it is. 
+14. What do the following statments print? See /SC14/LuckyNumber.
+15. What do the following statements print? See /SC15/HelloWorld.
+16. Suppose you omit the "" characters around Hello, World! from the HelloPrinter.java program. Is this a compile-time error or a run-time error? Compile-time.
+17. Suppose you change println to printline in the HelloPrinter.java program. Is this a compile-time error or a run-time error? Compile-time.
+18. Suppose you change main to hello in the HelloPrinter.java program. Is this a compile-time error or a run-time error? Run-time.
+19. When you used your computer, you may have experienced a program that “crashed” (quit spontane­ously) or “hung” (failed to respond to your input). Is that behavior a compile-time error or a run-time error? Run-time.
+20. Why can’t you test a program for run-time errors when it has compiler errors? Because the program never gets past the compile errors to render any run-time errors that may be present.
+
