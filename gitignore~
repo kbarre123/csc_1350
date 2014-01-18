@@ -1,8 +1,5 @@
 # Created by http://www.gitignore.io
 
-Java_Concepts_Early Objects.pdf
-csc_1350_syllabus_spring_2014.pdf
-
 ### Java ###
 *.class
 
