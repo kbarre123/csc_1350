@@ -14,3 +14,15 @@ csc_1350_syllabus_spring_2014.pdf
 *.war
 *.ear
 
+/homework/ch01/E1_11/BestFriends/nbproject/private/
+/homework/ch01/E1_11/BestFriends/build/
+/homework/ch01/E1_14/ShowMessage/nbproject/private/
+/homework/ch01/E1_14/ShowMessage/build/
+/homework/ch01/E1_14/DialogViewer/nbproject/private/
+/homework/ch01/E1_14/DialogViewer/build/
+/homework/ch01/E1_15/InputDialog/nbproject/private/
+/homework/ch01/E1_15/InputDialog/build/
+/homework/ch01/E1_16/HalTron/nbproject/private/
+/homework/ch01/E1_16/HalTron/build/
+/homework/ch01/E1_17/ExceptionTest/nbproject/private/
+/homework/ch01/E1_17/ExceptionTest/build/
