@@ -19,9 +19,6 @@ public class InputDialog {
     public static void main(String[] args) {
         // Promt user for name, print to screen.
         String name = JOptionPane.showInputDialog("What is your name?");
-        System.out.print(name);
-        
-        System.out.println(" ");
+        System.out.printf("Hello, %s.\n", name);
     }
-    
 }
