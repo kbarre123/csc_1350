@@ -21,6 +21,7 @@ public class TilingFloor {
         char previousTile = w;
         char previousRow = w;
         
+        // Get input from user, assign to variables.
         Scanner keyboard = new Scanner(System.in);
         System.out.println("Enter tile length:");
         int tileLength = keyboard.nextInt();
@@ -29,11 +30,13 @@ public class TilingFloor {
         System.out.println("Enter floor width:");
         int floorWidth = keyboard.nextInt();
         
+        // Loop through rows.
         for (int rowCount=0; rowCount<(floorWidth/tileLength); rowCount++) 
         {
-            if (previousRow == w) 
+            if (previousRow == w) // If previous row started with white, start with black.
             {
-                for(int tileCount=0; tileCount<((floorLength/tileLength)); tileCount++)
+                // Loop through columns.
+                for(int tileCount=0; tileCount<(floorLength/tileLength); tileCount++)
                 {
                     if (previousTile == w)
                     {
@@ -62,9 +65,9 @@ public class TilingFloor {
                     }
                 }  
             } 
-            else 
+            else // If previous row started with black, start with white.
             {
-                for(int tileCount=0; tileCount<=((floorLength/tileLength)-1); tileCount++)
+                for(int tileCount=0; tileCount<(floorLength/tileLength); tileCount++)
                 {
                     if (previousTile == b)
                     {
@@ -77,7 +80,6 @@ public class TilingFloor {
                             System.out.print(w);
                         }
                         previousTile = w;
-                        //System.out.print(tileCount);
                     } 
                     else
                     {
@@ -94,14 +96,5 @@ public class TilingFloor {
                 }
             }
         }
-         
-        
-        /* If there is room to the South, locate tile at beginning of row. If it's
-         * black, place a white tile South of it. Complete the row. If there's no
-         * room to the south on the next row, stop.
-        */
-        
-        //Move build message to new line.
-        System.out.println(" ");
     }
 }
