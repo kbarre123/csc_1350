@@ -49,7 +49,6 @@ public class TilingFloor {
                             System.out.print(b);
                         }
                         previousTile = b;
-                        //System.out.print(tileCount);
                     } 
                     else
                     {
