@@ -1,5 +1,5 @@
 /*
- * Practice merging branches.
+ * Practice merging branches because apparently it's that fucking hard.
  */
 
 package bullseyetile;
