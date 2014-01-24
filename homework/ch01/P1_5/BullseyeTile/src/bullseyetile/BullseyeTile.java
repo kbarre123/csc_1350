@@ -38,12 +38,28 @@ public class BullseyeTile {
             // Col is even.
             if (col % 2 == 0) {
                 // Is row first or last row?
+                for (int i = 0; i < row; i++) {
+                    if (i == 0 || i == (row - 1)) {
+                        for (int j = 0; j < col; j++) {
+                            System.out.print(b);
+                        }
+                        System.out.println();
+                    }
+                }
                 // Is row middle row?
                 // Is row neither?
             } 
             // Col is odd.
             else {
                 // Is row first or last row?
+                for (int i = 0; i < row; i++) {
+                    if (i == 0 || i == (row - 1)) {
+                        for (int j = 0; j < col; j++) {
+                            System.out.print(b);
+                        }
+                        System.out.println();
+                    }
+                }
                 // Is row middle row?
                 // Is row neither?
             }
@@ -55,12 +71,28 @@ public class BullseyeTile {
             // Col is even.
             if (col % 2 == 0) {
                 // Is row first or last row?
+                for (int i = 0; i < row; i++) {
+                    if (i == 0 || i == (row - 1)) {
+                        for (int j = 0; j < col; j++) {
+                            System.out.print(b);
+                        }
+                        System.out.println();
+                    }
+                }
                 // Is row middle row?
                 // Is row neither?
             } 
             // Col is odd.
             else {
                 // Is row first or last row?
+                for (int i = 0; i < row; i++) {
+                    if (i == 0 || i == (row - 1)) {
+                        for (int j = 0; j < col; j++) {
+                            System.out.print(b);
+                        }
+                        System.out.println();
+                    }
+                }
                 // Is row middle row?
                 // Is row neither?
             }
