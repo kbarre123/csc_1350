@@ -19,8 +19,8 @@ public class BullseyeTile {
     public static void main(String[] args) {
         
         // Declare variables.
-        int row = 0;
-        int col = 0;
+        int col;
+        int row;
         String b = "b ";
         String w = "w ";
         
@@ -34,68 +34,69 @@ public class BullseyeTile {
         // Is row even or odd?
         // Row is even.
         if (row % 2 == 0) {
-            // Is col even or odd?
-            // Col is even.
-            if (col % 2 == 0) {
+            // Print rows.
+            for (int i = 0; i < row; i++) {
                 // Is row first or last row?
-                for (int i = 0; i < row; i++) {
-                    if (i == 0 || i == (row - 1)) {
-                        for (int j = 0; j < col; j++) {
-                            System.out.print(b);
+                // Row is first or last row.
+                if (i == 0 || i == (row - 1)) {
+                    // Print black for each column.
+                    for (int j = 0; j < col; j++) {
+                        System.out.print(b);
+                    }
+                    System.out.println();
+                }
+                // Row is not a first or last row.
+                else {
+                    // Is row a middle row?
+                    // Row is a middle row.
+                    if (i == ((row/2)-1) || i == (row/2)) {
+                        // Is col even or odd?
+                        // Col is even.
+                        if (col % 2 == 0) {
+                            for (int k = 0; k < col; k++) {
+                                if (k == 0 || k == (col - 1)) {
+                                    System.out.print(b);
+                                } else if (k == ((col/2)-1) || k == (col/2)) {
+                                    System.out.print(b);
+                                } else {
+                                    System.out.print(w);
+                                }
+                            }
+                            System.out.println();
+                        }
+                        // Col is odd.
+                        else {
+                            for (int l = 0; l < col; l++) {
+                                if (l == 0 || l == (col - 1)) {
+                                    System.out.print(b);
+                                } else if (l == (col/2)) {
+                                    System.out.print(b);
+                                } else {
+                                    System.out.print(w);
+                                }
+                            }
+                            System.out.println();
+                        }
+                    }
+                    // Row is not a middle row.
+                    else {
+                        for (int m = 0; m < col; m++) {
+                            if (m == 0 || m == (col-1)) {
+                                System.out.print(b);
+                            }
+                            else {
+                                System.out.print(w);
+                            }
                         }
                         System.out.println();
                     }
                 }
-                // Is row middle row?
-                // Is row neither?
-            } 
-            // Col is odd.
-            else {
-                // Is row first or last row?
-                for (int i = 0; i < row; i++) {
-                    if (i == 0 || i == (row - 1)) {
-                        for (int j = 0; j < col; j++) {
-                            System.out.print(b);
-                        }
-                        System.out.println();
-                    }
-                }
-                // Is row middle row?
-                // Is row neither?
             }
         } 
         
         // Row is odd.
         else {
-            // Is col even or odd?
-            // Col is even.
-            if (col % 2 == 0) {
-                // Is row first or last row?
-                for (int i = 0; i < row; i++) {
-                    if (i == 0 || i == (row - 1)) {
-                        for (int j = 0; j < col; j++) {
-                            System.out.print(b);
-                        }
-                        System.out.println();
-                    }
-                }
-                // Is row middle row?
-                // Is row neither?
-            } 
-            // Col is odd.
-            else {
-                // Is row first or last row?
-                for (int i = 0; i < row; i++) {
-                    if (i == 0 || i == (row - 1)) {
-                        for (int j = 0; j < col; j++) {
-                            System.out.print(b);
-                        }
-                        System.out.println();
-                    }
-                }
-                // Is row middle row?
-                // Is row neither?
-            }
+            System.out.println("Slow your roll. I'm still on even columns!");
         }
     }
 }
