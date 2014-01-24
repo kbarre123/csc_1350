@@ -15,3 +15,5 @@ csc_1350_syllabus_spring_2014.pdf
 *.war
 *.ear
 
+/homework/ch01/P1_5/BullseyeTile/nbproject/private/
+/homework/ch01/P1_5/BullseyeTile/build/
