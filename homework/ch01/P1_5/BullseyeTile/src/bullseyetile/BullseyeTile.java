@@ -1,5 +1,5 @@
 /*
- * Practice merging branches because apparently it's that fucking hard.
+ * I'm done, let's merge back into master.
  */
 
 package bullseyetile;
