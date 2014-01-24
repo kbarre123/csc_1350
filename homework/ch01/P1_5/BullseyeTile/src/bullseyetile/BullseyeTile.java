@@ -31,43 +31,38 @@ public class BullseyeTile {
         System.out.println("How many columns would you like?");
         col = keyboard.nextInt();
         
-        // Print rows.
-        for (int i = 0; i < row; i++) {
-            
-            // If its the first or last row, print each column black.
-            if (i == 0 || i == (row-1)) {
-                for (int j = 0; j < col; j++) {
-                    System.out.print(b);
-                }
-                System.out.println();
-            }
-            
-            // If middle row and even, print center columns black.
-            else if (row % 2 == 0) {
-                if (i == ((row/2)-1) || i == (row/2)) {
-                    System.out.print(b);
-                } else {
-                
-                }
-                
-            }
-            
-            // If midde row and odd, print center columns black.
-            else if (i % 2 != 0) {
-                
-            }
-            
-            // Else, print first & last col black.
+        // Is row even or odd?
+        // Row is even.
+        if (row % 2 == 0) {
+            // Is col even or odd?
+            // Col is even.
+            if (col % 2 == 0) {
+                // Is row first or last row?
+                // Is row middle row?
+                // Is row neither?
+            } 
+            // Col is odd.
             else {
-                for (int k = 0; k < col; k++) {
-                    if (k == 0 || k == (col-1)) {
-                        System.out.print(b);
-                    }
-                    else {
-                        System.out.print(w);
-                    }
-                }
-                System.out.println();
+                // Is row first or last row?
+                // Is row middle row?
+                // Is row neither?
+            }
+        } 
+        
+        // Row is odd.
+        else {
+            // Is col even or odd?
+            // Col is even.
+            if (col % 2 == 0) {
+                // Is row first or last row?
+                // Is row middle row?
+                // Is row neither?
+            } 
+            // Col is odd.
+            else {
+                // Is row first or last row?
+                // Is row middle row?
+                // Is row neither?
             }
         }
     }
