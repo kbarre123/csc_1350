@@ -15,12 +15,15 @@ public class AccountBalance
         double interest = 0.05;
         
         double year_1 = balance + (balance * interest);
+        System.out.print("Balance after year 1: ");
         System.out.println(year_1);
         
         double year_2 = year_1 + (year_1 * interest);
+        System.out.print("Balance after year 2: ");
         System.out.println(year_2);
         
         double year_3 = year_2 + (year_2 * interest);
+        System.out.print("Balance after year 3: ");
         System.out.println(year_3);
     }
 }
