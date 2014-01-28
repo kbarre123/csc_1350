@@ -2,7 +2,7 @@
 
 Java_Concepts_Early Objects.pdf
 csc_1350_syllabus_spring_2014.pdf
-/tutorial/*
+/javaexamples/*
 
 ### Java ###
 *.class
@@ -14,36 +14,3 @@ csc_1350_syllabus_spring_2014.pdf
 *.jar
 *.war
 *.ear
-
-/homework/ch01/P1_5/BullseyeTile/nbproject/private/
-/homework/ch01/P1_5/BullseyeTile/build/
-/homework/ch02/SC04/CostOfGoods/nbproject/private/
-/homework/ch02/SC04/CostOfGoods/build/
-/homework/ch02/NewFolder/ReassignGreeting/nbproject/private/
-/homework/ch02/NewFolder/ReassignGreeting/build/
-/homework/ch02/R2_03/ArticleForSale/nbproject/private/
-/homework/ch02/R2_04/MysteryValue/nbproject/private/
-/homework/ch02/R2_04/MysteryValue/build/
-/homework/ch02/E2_1/AreaTester/nbproject/private/
-/homework/ch02/SC25/RectangleMover/nbproject/private/
-/homework/ch02/SC25/RectangleMover/build/
-/homework/ch02/SC26/BoxGetWidth/nbproject/private/
-/homework/ch02/SC26/BoxGetWidth/build/
-/homework/ch02/SC27/ToUpperCase/nbproject/private/
-/homework/ch02/SC27/ToUpperCase/build/
-/homework/ch02/WE2_1/DaysAlive/nbproject/private/
-/homework/ch02/WE2_1/DaysAlive/build/
-/homework/ch02/section_9_1/EmptyFrameViewer/nbproject/private/
-/homework/ch02/section_9_1/EmptyFrameViewer/build/
-/homework/ch02/section_9_3/RectangleViewer/nbproject/private/
-/homework/ch02/section_9_3/RectangleViewer/build/
-/homework/ch02/section_10/FaceComponent/nbproject/private/
-/homework/ch02/section_10/FaceViewer/nbproject/private/
-/homework/ch02/section_10/FaceViewer/build/
-/homework/ch02/SC13/WordLength/nbproject/private/
-/homework/ch02/E2_1/AreaTester/build/
-/homework/ch02/SC14/UpperCase/nbproject/private/
-/homework/ch02/SC14/UpperCase/build/
-/homework/ch02/SC13/WordLength/build/
-/homework/ch02/SC20/SquarePrinter/nbproject/private/
-/homework/ch02/SC20/SquarePrinter/build/
