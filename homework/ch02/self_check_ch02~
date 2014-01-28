@@ -6,7 +6,8 @@ Chapter 2
 Self Checkout Problems
 #1-29, 35-38
 
-1. No, a window and waterheater would not be in the same class. Their physical attributes and actions are too different to belong in the same class.
+1. No, a window and waterheater would not be in the same class. Their physical 
+attributes and actions are too different to belong in the same class.
 2. No.
 3. The variable name has spaces in it, which isn't allowed.
 4. See Java program in /CH02/SC04.
@@ -17,22 +18,24 @@ Self Checkout Problems
 9. String fullName = "K.C. Barrett";
 10. No.
 11. See Java program in /CH02/SC11.
-12. The parking space #1 exists, but is empty. Assignment would be directing someone to park their car in space #1.
+12. The parking space #1 exists, but is empty. Assignment would be directing 
+someone to park their car in space #1.
 13. See Java program in /CH02/SC13.
 14. See Java program in /CH02/SC14.
-15. No, because println() is a method of the PrintStream class. Also, println() takes one argument, of which none are provided here.
+15. No, because println() is a method of the PrintStream class. Also, println() 
+takes one argument, of which none are provided here.
 16. "p" is the target and "s" is the replacement.
 17. See Java program in /CH02/SC13.
 18. See Java program in /CH02/SC14.
 19. object.toUpper();
 20. See Java program in /CH02/SC20.
 21. See Java program in /CH02/SC20.
-22.
-23.
-24.
-25.
-26.
-27.
+22. See Java program in /CH02/SC20.
+23. ??
+24. ??
+25. See Java program in /CH02/SC20.
+26. See Java program in /CH02/SC20.
+27. 
 28.
 29.
 35.

@@ -35,9 +35,10 @@ takes one argument, of which none are provided here.
 24. ??
 25. See Java program in /CH02/SC20.
 26. See Java program in /CH02/SC20.
-27. 
-28.
-29.
+27. It prints "HELLO" then "Hello". The reason is, .toUpperCase method isn't
+permanent.
+28. It's a mutator, but isn't permanent.
+29. See Java program in /CH02/SC20.
 35.
 36.
 37.
