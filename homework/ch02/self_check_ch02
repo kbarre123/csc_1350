@@ -41,9 +41,14 @@ permanent.
 29. See Java program in /CH02/SC20.
 35. See Java program in /CH02/SC35.
 36. Because we're not augmenting the width/height, just the origin of the box.
-37.
-38.
-
+37. greeting2 is an object reference to greeting.
+38. greeting2.toUpperCase() will return the string in uppercase form of whatever 
+greeting was, and greeting will return the original greeting.
+39. See Java program in /CH02/SC39.
+40. See Java program in /CH02/SC39.
+41. See Java program in /CH02/SC39.
+42. See Java program in /CH02/SC39.
+43. You get an error.
 
 R2.1: 
 Q: Difference b/t an object and a class?
