@@ -15,3 +15,9 @@ csc_1350_syllabus_spring_2014.pdf
 *.war
 *.ear
 *.bak
+/homework/ch02/E2_2/PerimieterTester/nbproject/private/
+/homework/ch02/E2_2/PerimieterTester/build/
+/homework/ch02/E2_4/AddTester/nbproject/private/
+/homework/ch02/E2_4/AddTester/build/
+/homework/ch02/E2_5/ReplaceTester/nbproject/private/
+/homework/ch02/E2_5/ReplaceTester/build/
