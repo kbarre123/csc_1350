@@ -10,7 +10,7 @@ package reversetester;
 public class ReverseTester {
 
     public static void main(String[] args) {
-        // Create object using StringBuilder class.
+        // Create new object using StringBuilder class.
         StringBuilder sb = new StringBuilder("dessert");
         System.out.println(sb.reverse());
     }
