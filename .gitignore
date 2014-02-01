@@ -14,18 +14,4 @@ csc_1350_syllabus_spring_2014.pdf
 *.jar
 *.war
 *.ear
-<<<<<<< HEAD
-*.bak
-/homework/ch02/SC44/CircleViewer/nbproject/private/
-/homework/ch02/SC44/CircleViewer/build/
-/homework/ch02/E2_17/TwoSquareViewer/nbproject/private/
-/homework/ch02/E2_17/TwoSquareViewer/build/
-/homework/ch02/P2_13/FrameBackgroundViewer/nbproject/private/
-/homework/ch02/P2_13/FrameBackgroundViewer/build/
-=======
-*.bak
->>>>>>> aa35042c71f0ffee14a7779c24e32d713f1f5aab
-/homework/ch02/MessageDialogViewer/nbproject/private/
-/homework/ch02/MessageDialogViewer/build/
-/homework/ch03/ConcertCounter/nbproject/private/
-/homework/ch03/ConcertCounter/build/
+
