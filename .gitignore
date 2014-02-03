@@ -16,10 +16,3 @@ csc_1350_syllabus_spring_2014.pdf
 *.ear
 
 *.bak
-
-/projects/project_01/EllipseTester/nbproject/private/
-/projects/project_01/EllipseTester/build/
-/lab/lab-02/FourRectanglePrinter/nbproject/private/
-/lab/lab-02/FourRectanglePrinter/build/
-/lab/lab-02/IntersectionPrinter/nbproject/private/
-/lab/lab-02/IntersectionPrinter/build/
