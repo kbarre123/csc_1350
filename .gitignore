@@ -3,6 +3,7 @@
 Java_Concepts_Early Objects.pdf
 csc_1350_syllabus_spring_2014.pdf
 /supplements_and_project_directives/*
+/projects/*
 
 ### Java ###
 *.class
@@ -16,3 +17,4 @@ csc_1350_syllabus_spring_2014.pdf
 *.ear
 
 *.bak
+
