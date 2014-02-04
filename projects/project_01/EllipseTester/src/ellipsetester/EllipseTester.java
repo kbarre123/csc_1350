@@ -6,7 +6,7 @@ import java.awt.geom.Ellipse2D;
  * @author Kenneth C. Barrett
  * @date 2014-02-03;
  * Description: Create two ellipses, one which is defined relative to the other.
- *  Manipulate the objects per project directives.
+ *      Manipulate the objects per project directives.
  * Course: CS1350.01
  * PAWS ID: kbarr17
  * Project #: 1
