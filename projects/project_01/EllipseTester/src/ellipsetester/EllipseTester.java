@@ -22,7 +22,7 @@ public class EllipseTester {
          * first.
          */
         Ellipse2D.Double circle = new Ellipse2D.Double(
-            (ellipse.getX() + (ellipse.getWidth() - ellipse.getHeight())), 
+            (ellipse.getX() + ((ellipse.getWidth()/2) - ellipse.getHeight()/2)), 
             ellipse.getY(), 
             ellipse.getHeight(), 
             ellipse.getHeight()
@@ -45,14 +45,12 @@ public class EllipseTester {
         double circleArea = Pi * Math.pow(circle.getWidth() / 2.0, 2.0);
         double areaDifferential = ellipseArea - circleArea;
         
-        /* TODO!!!!!!!!!!!!!!!!!!!!!!!
-         * Test to see if ellipse and circle share the same center, which they
-         * currently DON'T!!!!
-         * System.out.println(ellipse.getCenterX());
-         * System.out.println(ellipse.getCenterY());
-         * System.out.println(circle.getCenterX());
-         * System.out.println(circle.getCenterY());
-         */
+        
+        // DEBUG: Test to see if ellipse and circle share the same center.
+//        System.out.println("Center of ellipse's X asis: " + ellipse.getCenterX());
+//        System.out.println("Center of ellipse's Y asis: " + ellipse.getCenterY());
+//        System.out.println("Center of circle's X asis: " + circle.getCenterX());
+//        System.out.println("Center of circle's Y asis: " + circle.getCenterY());
         
         /* 
          * Print the verticies of the ellipse, circle and the area between the 
