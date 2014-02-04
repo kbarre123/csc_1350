@@ -58,10 +58,16 @@ public class EllipseTester {
         // Print results per Step #7.
         System.out.println("After the ellipses are resized:");
         resultsPrinter(ellipse, circle);
+        
+        // Print the perimeters of each object.
+        System.out.println("The approximate perimeter of the bigger ellipse is "
+                + perimeterCalc(ellipse) + ".");
+        System.out.println("The approximate perimeter of the smaller ellipse is "
+                + perimeterCalc(circle) + ".");
     }   
 
     // Calculate the area differential between the ellipse and circle.
-    public static double areaDifferential(Ellipse2D.Double ellipse, Ellipse2D.Double circle) {
+    public static double areaDifferentialCalc(Ellipse2D.Double ellipse, Ellipse2D.Double circle) {
     
     double ellipseArea = (Math.PI * ellipse.getWidth() * ellipse.getHeight()) / 4;
     double circleArea = (Math.PI * circle.getWidth() * circle.getHeight()) / 4;
@@ -83,9 +89,20 @@ public class EllipseTester {
         
         // Print area differential.
         System.out.println("The area of the shaded region is " + 
-                areaDifferential(ellipse, circle) + ".");
+                areaDifferentialCalc(ellipse, circle) + ".");
         
         // Print empty line between result sets.
         System.out.println("");
+    }
+    
+    public static double perimeterCalc(Ellipse2D.Double ellipse) {
+        // Calculate the perimeter of the outside ellipse.
+        double ellipsePerimeter = 
+        (Math.PI/2)*(3*(ellipse.getWidth()+ellipse.getHeight()) - Math.sqrt(
+                (3*Math.pow(ellipse.getWidth(), 2)) +
+                (10*ellipse.getWidth()*ellipse.getHeight()) + 
+                (3*(Math.pow(ellipse.getHeight(), 2)))
+        ));
+        return ellipsePerimeter;
     }
 }
