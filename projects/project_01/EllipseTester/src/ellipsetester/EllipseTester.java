@@ -62,43 +62,43 @@ public class EllipseTester {
                 + perimeterCalc(e2) + ".");
     }   
 
-    // Print results in desired format.
-    public static void resultsPrinter(Ellipse2D.Double e1, Ellipse2D.Double e2) {
-        // Print coordinates of outer ellipse.
-        System.out.print("The coordinates of the bigger ellipse are {(");
-        System.out.println(e1.getCenterX() + ", " + e1.getCenterY() + "), " + e1.getWidth() + 
-                ", " + e1.getHeight() + "}.");
-        
-        // Print coordinates of inner ellipse.
-        System.out.print("The coordinates of the smaller ellipse are {(");
-        System.out.println(e2.getCenterX() + ", " + e2.getCenterY() + "), " + e2.getWidth() + 
-                ", " + e2.getHeight() + "}.");
-        
-        // Print area differential.
-        System.out.println("The area of the shaded region is " + 
-                areaDifferentialCalc(e1, e2) + ".");
-        
-        // Print empty line between result sets.
-        System.out.println("");
-    }
-    
-    // Calculate the area differential between the two objects.
-    public static double areaDifferentialCalc(Ellipse2D.Double e1, Ellipse2D.Double e2) {
-    
-    double e1Area = (Math.PI * e1.getWidth() * e1.getHeight()) / 4;
-    double e2Area = (Math.PI * e2.getWidth() * e2.getHeight()) / 4;
-    double areaDifferential = e1Area - e2Area;
-    return areaDifferential;
-    }
-    
-    public static double perimeterCalc(Ellipse2D.Double ellipse) {
-        // Calculate the perimeter of the outside ellipse.
-        double ellipsePerimeter = 
-        (Math.PI/2)*(3*(ellipse.getWidth()+ellipse.getHeight()) - Math.sqrt(
-                (3*Math.pow(ellipse.getWidth(), 2)) +
-                (10*ellipse.getWidth()*ellipse.getHeight()) + 
-                (3*(Math.pow(ellipse.getHeight(), 2)))
-        ));
-        return ellipsePerimeter;
-    }
+        // Print results in desired format.
+        public static void resultsPrinter(Ellipse2D.Double e1, Ellipse2D.Double e2) {
+            // Print coordinates of outer ellipse.
+            System.out.print("The coordinates of the bigger ellipse are {(");
+            System.out.println(e1.getCenterX() + ", " + e1.getCenterY() + "), " + e1.getWidth() + 
+                    ", " + e1.getHeight() + "}.");
+
+            // Print coordinates of inner ellipse.
+            System.out.print("The coordinates of the smaller ellipse are {(");
+            System.out.println(e2.getCenterX() + ", " + e2.getCenterY() + "), " + e2.getWidth() + 
+                    ", " + e2.getHeight() + "}.");
+
+            // Print area differential.
+            System.out.println("The area of the shaded region is " + 
+                    areaDifferentialCalc(e1, e2) + ".");
+
+            // Print empty line between result sets.
+            System.out.println("");
+        }
+
+        // Calculate the area differential between the two objects.
+        public static double areaDifferentialCalc(Ellipse2D.Double e1, Ellipse2D.Double e2) {
+
+        double e1Area = (Math.PI * e1.getWidth() * e1.getHeight()) / 4;
+        double e2Area = (Math.PI * e2.getWidth() * e2.getHeight()) / 4;
+        double areaDifferential = e1Area - e2Area;
+        return areaDifferential;
+        }
+
+        public static double perimeterCalc(Ellipse2D.Double ellipse) {
+            // Calculate the perimeter of the outside ellipse.
+            double ellipsePerimeter = 
+            (Math.PI/2)*(3*(ellipse.getWidth()+ellipse.getHeight()) - Math.sqrt(
+                    (3*Math.pow(ellipse.getWidth(), 2)) +
+                    (10*ellipse.getWidth()*ellipse.getHeight()) + 
+                    (3*(Math.pow(ellipse.getHeight(), 2)))
+            ));
+            return ellipsePerimeter;
+        }
 }
