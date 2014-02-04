@@ -51,7 +51,7 @@ public class EllipseTester {
         System.out.println("");
         
         // Translate both objects (10, -10).
-        ellipse.setFrame(ellipse.getX()+10, ellipse.getY()-10, 120, 80);
+        ellipse.setFrame(ellipse.getX()+10, ellipse.getY()-10, ellipse.getWidth(), ellipse.getHeight());
         circle.setFrame(circle.getX()+10, circle.getY()-10, circle.getWidth(), circle.getHeight());
         
         // Print coordinates per Step #5.
