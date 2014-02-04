@@ -29,47 +29,63 @@ public class EllipseTester {
             ellipse.getHeight()
         );
         
-        // Calculate the area between the ellipse and circle.
-        double Pi = Math.PI;
-        double ellipseArea = (Pi * ellipse.getWidth() * ellipse.getHeight()) / 4;
-        double circleArea = Pi * Math.pow(circle.getWidth() / 2.0, 2.0);
-        double areaDifferential = ellipseArea - circleArea;
-        
         // Print results per Step #3.
-        System.out.print("The coordinates of the bigger ellipse are {(");
-        System.out.println(ellipse.getCenterX() + ", " + ellipse.getCenterY() + "), " + ellipse.getWidth() + 
-                ", " + ellipse.getHeight() + "}.");
-        
-        System.out.print("The coordinates of the smaller ellipse are {(");
-        System.out.println(circle.getCenterX() + ", " + circle.getCenterY() + "), " + circle.getWidth() + 
-                ", " + circle.getHeight() + "}.");
-        
-        System.out.println("The area of the shaded region is " + 
-                areaDifferential + ".");
-        
-        // Print break after first solution-set.
-        System.out.println("");
+        resultsPrinter(ellipse, circle);
         
         // Translate both objects (10, -10) per Step #4.
         ellipse.setFrame(ellipse.getX()+10, ellipse.getY()-10, ellipse.getWidth(), ellipse.getHeight());
         circle.setFrame(circle.getX()+10, circle.getY()-10, circle.getWidth(), circle.getHeight());
         
-        // Print coordinates per Step #5.
+        // Print results per Step #5.
+        System.out.println("After the ellipses are translated:");
+        resultsPrinter(ellipse, circle);
+        
+        // Mutate width/height of both objects per Step #6.
+        ellipse.setFrame(ellipse.getX(), ellipse.getY(), ellipse.getWidth()+10, ellipse.getHeight()+20);
+        
+        // TODO: Refactor this into one statement instead of two.
+        circle.setFrame(0, 0,
+                ellipse.getWidth()/2, 
+                ellipse.getHeight()/2
+        );
+        circle.setFrame(
+                ellipse.getX()+ellipse.getWidth()/2-(circle.getWidth()/2), 
+                ellipse.getY()+ellipse.getHeight()/2-(circle.getHeight()/2),
+                circle.getWidth(), 
+                circle.getHeight()
+        );
+        
+        // Print results per Step #7.
+        System.out.println("After the ellipses are resized:");
+        resultsPrinter(ellipse, circle);
+    }   
+
+    // Calculate the area differential between the ellipse and circle.
+    public static double areaDifferential(Ellipse2D.Double ellipse, Ellipse2D.Double circle) {
+    
+    double ellipseArea = (Math.PI * ellipse.getWidth() * ellipse.getHeight()) / 4;
+    double circleArea = (Math.PI * circle.getWidth() * circle.getHeight()) / 4;
+    double areaDifferential = ellipseArea - circleArea;
+    return areaDifferential;
+    }
+    
+    // Print results in desired format.
+    public static void resultsPrinter(Ellipse2D.Double ellipse, Ellipse2D.Double circle) {
+        // Print coordinates of outer ellipse.
         System.out.print("The coordinates of the bigger ellipse are {(");
         System.out.println(ellipse.getCenterX() + ", " + ellipse.getCenterY() + "), " + ellipse.getWidth() + 
                 ", " + ellipse.getHeight() + "}.");
         
+        // Print coordinates of inner circle.
         System.out.print("The coordinates of the smaller ellipse are {(");
         System.out.println(circle.getCenterX() + ", " + circle.getCenterY() + "), " + circle.getWidth() + 
                 ", " + circle.getHeight() + "}.");
         
+        // Print area differential.
         System.out.println("The area of the shaded region is " + 
-                areaDifferential + ".");
+                areaDifferential(ellipse, circle) + ".");
         
-        // Print break after second solution-set.
+        // Print empty line between result sets.
         System.out.println("");
-        
-        // Step #6.
-        
-    }   
+    }
 }
