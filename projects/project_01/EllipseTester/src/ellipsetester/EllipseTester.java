@@ -50,7 +50,7 @@ public class EllipseTester {
         // Print break after first solution-set.
         System.out.println("");
         
-        // Translate both objects (10, -10).
+        // Translate both objects (10, -10) per Step #4.
         ellipse.setFrame(ellipse.getX()+10, ellipse.getY()-10, ellipse.getWidth(), ellipse.getHeight());
         circle.setFrame(circle.getX()+10, circle.getY()-10, circle.getWidth(), circle.getHeight());
         
@@ -68,5 +68,8 @@ public class EllipseTester {
         
         // Print break after second solution-set.
         System.out.println("");
+        
+        // Step #6.
+        
     }   
 }
