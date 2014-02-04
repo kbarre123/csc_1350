@@ -29,28 +29,21 @@ public class EllipseTester {
         );
         
         // Calculate the verticies of the ellipse and circle.
-        double ellipse_x = ellipse.getX();
-        double ellipse_y = ellipse.getY();
-        double ellipse_r1 = ellipse.getWidth() / 2;
-        double ellipse_r2 = ellipse.getHeight() / 2;
+        double ellipse_x = ellipse.getCenterX();
+        double ellipse_y = ellipse.getCenterY();
+        double ellipse_r1 = ellipse.getWidth();
+        double ellipse_r2 = ellipse.getHeight();
         
-        double circle_x = circle.getX();
-        double circle_y = circle.getY();
-        double circle_r1 = circle.getWidth() / 2;
-        double circle_r2 = circle.getHeight() / 2;
+        double circle_x = circle.getCenterX();
+        double circle_y = circle.getCenterY();
+        double circle_r1 = circle.getWidth();
+        double circle_r2 = circle.getHeight();
         
         // Calculate the area between the ellipse and circle.
         double Pi = Math.PI;
         double ellipseArea = (Pi * ellipse.getWidth() * ellipse.getHeight()) / 4;
         double circleArea = Pi * Math.pow(circle.getWidth() / 2.0, 2.0);
         double areaDifferential = ellipseArea - circleArea;
-        
-        
-        // DEBUG: Test to see if ellipse and circle share the same center.
-//        System.out.println("Center of ellipse's X asis: " + ellipse.getCenterX());
-//        System.out.println("Center of ellipse's Y asis: " + ellipse.getCenterY());
-//        System.out.println("Center of circle's X asis: " + circle.getCenterX());
-//        System.out.println("Center of circle's Y asis: " + circle.getCenterY());
         
         /* 
          * Print the verticies of the ellipse, circle and the area between the 
@@ -66,5 +59,10 @@ public class EllipseTester {
         
         System.out.println("The area of the shaded region is " + 
                 areaDifferential + ".");
+        
+        // Print break after first solution-set.
+        System.out.println("");
+        
+        
     }   
 }
