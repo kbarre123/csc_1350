@@ -14,6 +14,7 @@ import java.awt.geom.Ellipse2D;
 public class EllipseTester {
 
     public static void main(String[] args) {
+        
         // Construct ellipse object with given params.
         Ellipse2D.Double ellipse = new Ellipse2D.Double(60, 40, 120, 80);
         
@@ -28,34 +29,20 @@ public class EllipseTester {
             ellipse.getHeight()
         );
         
-        // Calculate the verticies of the ellipse and circle.
-        double ellipse_x = ellipse.getCenterX();
-        double ellipse_y = ellipse.getCenterY();
-        double ellipse_r1 = ellipse.getWidth();
-        double ellipse_r2 = ellipse.getHeight();
-        
-        double circle_x = circle.getCenterX();
-        double circle_y = circle.getCenterY();
-        double circle_r1 = circle.getWidth();
-        double circle_r2 = circle.getHeight();
-        
         // Calculate the area between the ellipse and circle.
         double Pi = Math.PI;
         double ellipseArea = (Pi * ellipse.getWidth() * ellipse.getHeight()) / 4;
         double circleArea = Pi * Math.pow(circle.getWidth() / 2.0, 2.0);
         double areaDifferential = ellipseArea - circleArea;
         
-        /* 
-         * Print the verticies of the ellipse, circle and the area between the 
-         * two.
-         */
+        // Print results per Step #3.
         System.out.print("The coordinates of the bigger ellipse are {(");
-        System.out.println(ellipse_x + ", " + ellipse_y + "), " + ellipse_r1 + 
-                ", " + ellipse_r2 + "}.");
+        System.out.println(ellipse.getCenterX() + ", " + ellipse.getCenterY() + "), " + ellipse.getWidth() + 
+                ", " + ellipse.getHeight() + "}.");
         
         System.out.print("The coordinates of the smaller ellipse are {(");
-        System.out.println(circle_x + ", " + circle_y + "), " + circle_r1 + 
-                ", " + circle_r2 + "}.");
+        System.out.println(circle.getCenterX() + ", " + circle.getCenterY() + "), " + circle.getWidth() + 
+                ", " + circle.getHeight() + "}.");
         
         System.out.println("The area of the shaded region is " + 
                 areaDifferential + ".");
@@ -63,6 +50,23 @@ public class EllipseTester {
         // Print break after first solution-set.
         System.out.println("");
         
+        // Translate both objects (10, -10).
+        ellipse.setFrame(ellipse.getX()+10, ellipse.getY()-10, 120, 80);
+        circle.setFrame(circle.getX()+10, circle.getY()-10, circle.getWidth(), circle.getHeight());
         
+        // Print coordinates per Step #5.
+        System.out.print("The coordinates of the bigger ellipse are {(");
+        System.out.println(ellipse.getCenterX() + ", " + ellipse.getCenterY() + "), " + ellipse.getWidth() + 
+                ", " + ellipse.getHeight() + "}.");
+        
+        System.out.print("The coordinates of the smaller ellipse are {(");
+        System.out.println(circle.getCenterX() + ", " + circle.getCenterY() + "), " + circle.getWidth() + 
+                ", " + circle.getHeight() + "}.");
+        
+        System.out.println("The area of the shaded region is " + 
+                areaDifferential + ".");
+        
+        // Print break after second solution-set.
+        System.out.println("");
     }   
 }
