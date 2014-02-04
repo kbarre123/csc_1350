@@ -62,15 +62,6 @@ public class EllipseTester {
                 + perimeterCalc(e2) + ".");
     }   
 
-    // Calculate the area differential between the two objects.
-    public static double areaDifferentialCalc(Ellipse2D.Double e1, Ellipse2D.Double e2) {
-    
-    double e1Area = (Math.PI * e1.getWidth() * e1.getHeight()) / 4;
-    double e2Area = (Math.PI * e2.getWidth() * e2.getHeight()) / 4;
-    double areaDifferential = e1Area - e2Area;
-    return areaDifferential;
-    }
-    
     // Print results in desired format.
     public static void resultsPrinter(Ellipse2D.Double e1, Ellipse2D.Double e2) {
         // Print coordinates of outer ellipse.
@@ -89,6 +80,15 @@ public class EllipseTester {
         
         // Print empty line between result sets.
         System.out.println("");
+    }
+    
+    // Calculate the area differential between the two objects.
+    public static double areaDifferentialCalc(Ellipse2D.Double e1, Ellipse2D.Double e2) {
+    
+    double e1Area = (Math.PI * e1.getWidth() * e1.getHeight()) / 4;
+    double e2Area = (Math.PI * e2.getWidth() * e2.getHeight()) / 4;
+    double areaDifferential = e1Area - e2Area;
+    return areaDifferential;
     }
     
     public static double perimeterCalc(Ellipse2D.Double ellipse) {
