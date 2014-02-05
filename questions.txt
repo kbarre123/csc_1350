@@ -1,0 +1,5 @@
+Where is the best place to declare a public global variable? Before the main method?
+
+Do you want the results to print the ellipses' radii or their width/height?
+
+How do you call .nextDouble() in Ch02/E2_12?
