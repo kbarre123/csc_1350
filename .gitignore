@@ -18,3 +18,5 @@ projects/
 
 *.bak
 
+/EllipseTester/nbproject/private/
+/EllipseTester/build/
