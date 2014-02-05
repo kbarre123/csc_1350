@@ -39,13 +39,13 @@ public class EllipseTester {
         
         // Print results per Step #3.
         System.out.print("The coordinates of the bigger ellipse are {(");
-        System.out.println(e1.getCenterX() + ", " + e1.getCenterY() + "), " + e1.getWidth()/2 + 
-                ", " + e1.getHeight()/2 + "}.");
+        System.out.println(e1.getCenterX() + ", " + e1.getCenterY() + "), " + 
+                e1.getWidth()/2 + ", " + e1.getHeight()/2 + "}.");
 
         // Print coordinates of inner ellipse.
         System.out.print("The coordinates of the smaller ellipse are {(");
-        System.out.println(e2.getCenterX() + ", " + e2.getCenterY() + "), " + e2.getWidth()/2 + 
-                ", " + e2.getHeight()/2 + "}.");
+        System.out.println(e2.getCenterX() + ", " + e2.getCenterY() + "), " + 
+                e2.getWidth()/2 + ", " + e2.getHeight()/2 + "}.");
 
         // Print area differential.
         System.out.println("The area of the shaded region is " + 
@@ -61,13 +61,13 @@ public class EllipseTester {
         // Print results per Step #5.
         System.out.println("After the ellipses are translated:");
         System.out.print("The coordinates of the bigger ellipse are {(");
-        System.out.println(e1.getCenterX() + ", " + e1.getCenterY() + "), " + e1.getWidth()/2 + 
-                ", " + e1.getHeight()/2 + "}.");
+        System.out.println(e1.getCenterX() + ", " + e1.getCenterY() + "), " + 
+                e1.getWidth()/2 + ", " + e1.getHeight()/2 + "}.");
 
         // Print coordinates of inner ellipse.
         System.out.print("The coordinates of the smaller ellipse are {(");
-        System.out.println(e2.getCenterX() + ", " + e2.getCenterY() + "), " + e2.getWidth()/2 + 
-                ", " + e2.getHeight()/2 + "}.");
+        System.out.println(e2.getCenterX() + ", " + e2.getCenterY() + "), " + 
+                e2.getWidth()/2 + ", " + e2.getHeight()/2 + "}.");
 
         // Print area differential.
         System.out.println("The area of the shaded region is " + 
@@ -94,13 +94,13 @@ public class EllipseTester {
         // Print results per Step #7.
         System.out.println("After the ellipses are resized:");
         System.out.print("The coordinates of the bigger ellipse are {(");
-        System.out.println(e1.getCenterX() + ", " + e1.getCenterY() + "), " + e1.getWidth()/2 + 
-                ", " + e1.getHeight()/2 + "}.");
+        System.out.println(e1.getCenterX() + ", " + e1.getCenterY() + "), " + 
+                e1.getWidth()/2 + ", " + e1.getHeight()/2 + "}.");
 
         // Print coordinates of inner ellipse.
         System.out.print("The coordinates of the smaller ellipse are {(");
-        System.out.println(e2.getCenterX() + ", " + e2.getCenterY() + "), " + e2.getWidth()/2 + 
-                ", " + e2.getHeight()/2 + "}.");
+        System.out.println(e2.getCenterX() + ", " + e2.getCenterY() + "), " + 
+                e2.getWidth()/2 + ", " + e2.getHeight()/2 + "}.");
 
         // Print area differential.
         System.out.println("The area of the shaded region is " + 
