@@ -2,7 +2,7 @@
 
 Java_Concepts_Early Objects.pdf
 csc_1350_syllabus_spring_2014.pdf
-supplements_and_project_directives/
+handouts/
 projects/
 
 ### Java ###
@@ -18,5 +18,3 @@ projects/
 
 *.bak
 
-/EllipseTester/nbproject/private/
-/EllipseTester/build/
