@@ -20,6 +20,8 @@ public class PracticeExam01 {
         
         System.out.println("The future value of the loan is $" + FV + ".");
         System.out.println("The expected value is $101.0.");
+        /* End #4b */
+        
         
     }
     
