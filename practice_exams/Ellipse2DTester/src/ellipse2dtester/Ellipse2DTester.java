@@ -8,7 +8,7 @@ import java.awt.geom.Ellipse2D;
 public class Ellipse2DTester {
 
     public static void main(String[] args) {
-        // #1: Create  an ellipse.
+        // #1: Create an ellipse.
         Ellipse2D.Double outerEllipse = new Ellipse2D.Double(
             10,     // X origin coordinate
             20,     // Y origin coordinate
