@@ -1,0 +1,28 @@
+CSC1350
+Practice Exam #1 Answers
+KC Barrett
+
+1a. valid 
+1b. invalid 
+1c. valid (this would be an example of a constant value, since it uses all caps and is separated by an underscore)
+1d. invalid
+1e. valid, but discouraged. It's also valid to start with a $, but that's discouraged too.
+1f. valid
+1g. valid
+1h. valid, constant
+
+2. 
+Feliciana is a city
+in the state of LOUISIANA.
+
+I'm a little unsure about #3, this is my best guess.
+3a. "492"
+3b. "751 + 2"
+
+4a. Can't really do this in a text file.
+4b. FV = PV(Math.pow((1 + INT/100), YRS);
+4c. i) 6.25; ii) 11.7
+
+5. We didn't get around to learning printf, so I doubt he'll test us on it. But, here's my attempt anyways 
+Today's date is 09/23/2013.
+McKen earned 5035.00.
