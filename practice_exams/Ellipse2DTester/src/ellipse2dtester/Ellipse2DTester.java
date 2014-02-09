@@ -61,6 +61,11 @@ public class Ellipse2DTester {
                 innerEllipse.getHeight()
         );
         
+        /* Test to ensure that both objects share a center
+        System.out.println(outerEllipse.getCenterX() + " " + outerEllipse.getCenterY());
+        System.out.println(innerEllipse.getCenterX() + " " + innerEllipse.getCenterY());
+        */
+        
         // #8: Print location, width and height again.
         System.out.println("After shifting and resizing the ellipses:");
         System.out.println("<-BIG ELLIPSE->");
