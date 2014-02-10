@@ -47,12 +47,30 @@ public class Ellipse2DTester {
         System.out.println("Area of shaded region: " + areaDifferential);
         System.out.println("");
         
+        /* Test to ensure that both objects share a center
+        System.out.println(outerEllipse.getCenterX() + " " + outerEllipse.getCenterY());
+        System.out.println(innerEllipse.getCenterX() + " " + innerEllipse.getCenterY());
+        */
+        
         // #5: Translate each ellipse rightwards by 10 and downwards by 15.
-        outerEllipse.setFrame(outerEllipse.getX() + 10, outerEllipse.getY() + 15, outerEllipse.getWidth(), outerEllipse.getHeight());
-        innerEllipse.setFrame(10, 15, innerEllipse.getWidth(), innerEllipse.getHeight());
+        outerEllipse.setFrame(outerEllipse.getX() + 10, 
+                outerEllipse.getY() + 15, 
+                outerEllipse.getWidth(), 
+                outerEllipse.getHeight()
+        );
+        
+        innerEllipse.setFrame(innerEllipse.getX() + 10, 
+                innerEllipse.getY() + 15, 
+                innerEllipse.getWidth(), 
+                innerEllipse.getHeight()
+        );
         
         // #6: Change width of smaller ellipse so that its width is 0.75 the width of big one.
-        innerEllipse.setFrame(innerEllipse.getX(), innerEllipse.getY(), outerEllipse.getWidth()*0.75, innerEllipse.getHeight());
+        innerEllipse.setFrame(innerEllipse.getX(), 
+                innerEllipse.getY(), 
+                outerEllipse.getWidth()*0.75, 
+                innerEllipse.getHeight()
+        );
         
         // #7: Shift smaller ellipse so that it shares a center with the bigger one again.
         innerEllipse.setFrame((outerEllipse.getX() + ((outerEllipse.getWidth() - innerEllipse.getWidth())/2)), 
@@ -60,11 +78,6 @@ public class Ellipse2DTester {
                 innerEllipse.getWidth(), 
                 innerEllipse.getHeight()
         );
-        
-        /* Test to ensure that both objects share a center
-        System.out.println(outerEllipse.getCenterX() + " " + outerEllipse.getCenterY());
-        System.out.println(innerEllipse.getCenterX() + " " + innerEllipse.getCenterY());
-        */
         
         // #8: Print location, width and height again.
         System.out.println("After shifting and resizing the ellipses:");
@@ -87,6 +100,11 @@ public class Ellipse2DTester {
         
         // #9: Display the area differential.
         System.out.println("Area of shaded region: " + areaDifferential);
+        
+        /* Test to ensure that both objects share a center
+        System.out.println(outerEllipse.getCenterX() + " " + outerEllipse.getCenterY());
+        System.out.println(innerEllipse.getCenterX() + " " + innerEllipse.getCenterY());
+        */
     }
     
 }
