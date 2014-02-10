@@ -1,0 +1,22 @@
+# Created by http://www.gitignore.io
+
+Java_Concepts_Early Objects.pdf
+csc_1350_syllabus_spring_2014.pdf
+handouts/
+projects/
+
+### Java ###
+*.class
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+*.bak
+
+/practice_exams/DustinTest/nbproject/private/
+/practice_exams/DustinTest/build/
