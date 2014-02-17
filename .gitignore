@@ -18,3 +18,11 @@ projects/
 
 *.bak
 
+/homework/ch04/E4_01/LetterPaperDimensions/nbproject/private/
+/homework/ch04/E4_01/LetterPaperDimensions/build/
+/homework/ch04/E4_02/LetterPerimeter/nbproject/private/
+/homework/ch04/E4_02/LetterPerimeter/build/
+/homework/ch04/E4_03/NumberSquarer/nbproject/private/
+/homework/ch04/E4_03/NumberSquarer/build/
+/homework/ch04/E4_04/NumberPrinterBig/nbproject/private/
+/homework/ch04/E4_04/NumberPrinterBig/build/
