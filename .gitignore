@@ -16,9 +16,9 @@ projects/
 *.war
 *.ear
 
+<<<<<<< HEAD
 *.bak
 
-/practice_exams/EllipseTester/nbproject/private/
-/practice_exams/EllipseTester/build/
-/practice_exams/HelloWorld/nbproject/private/
-/practice_exams/HelloWorld/build/
+=======
+*.bak
+>>>>>>> e689d41f97df423260b5842efd14743e9463d3fc
