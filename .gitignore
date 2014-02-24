@@ -19,3 +19,8 @@ projects/
 <<<<<<< HEAD
 *.bak
 
+/lab/lab-04/SodaCan/nbproject/private/
+/lab/lab-04/SodaCanTester/nbproject/private/
+/lab/lab-04/SodaCan/build/
+/lab/lab-04/Balloon/nbproject/private/
+/lab/lab-04/Balloon/build/
