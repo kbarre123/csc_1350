@@ -3,7 +3,6 @@
 Java_Concepts_Early Objects.pdf
 csc_1350_syllabus_spring_2014.pdf
 handouts/
-projects/
 
 ### Java ###
 *.class
@@ -19,11 +18,3 @@ projects/
 <<<<<<< HEAD
 *.bak
 
-<<<<<<< HEAD
-=======
-/lab/lab-04/SodaCan/nbproject/private/
-/lab/lab-04/SodaCanTester/nbproject/private/
-/lab/lab-04/SodaCan/build/
-/lab/lab-04/Balloon/nbproject/private/
-/lab/lab-04/Balloon/build/
->>>>>>> f40b65016c516e94019df67ca18503a8492b5d4d
