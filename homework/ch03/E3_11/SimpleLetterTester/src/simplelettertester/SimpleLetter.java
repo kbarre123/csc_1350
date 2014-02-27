@@ -12,7 +12,7 @@ public class SimpleLetter
     private String text;
     
     // Constructs a letter
-    public SimpleLetter(String sTo, String sFrom)
+    public SimpleLetter(String sFrom, String sTo)
     {
         to = sTo;
         from = sFrom;
