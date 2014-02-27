@@ -21,7 +21,7 @@ public class SimpleLetter
     
     public void addLine(String line)
     {
-        text += line + "\n";
+        text = text.concat(line).concat("\n");
     }
     
     public String getFrom()
