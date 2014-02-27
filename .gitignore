@@ -14,13 +14,3 @@ handouts/
 *.jar
 *.war
 *.ear
-
-<<<<<<< HEAD
-*.bak
-
-/homework/ch03/E3_08/EmployeeTester/nbproject/private/
-/homework/ch03/E3_08/EmployeeTester/build/
-/homework/ch03/E3_09/CarTester/nbproject/private/
-/homework/ch03/E3_09/CarTester/build/
-/homework/ch03/E3_10/ProductPrinter/nbproject/private/
-/homework/ch03/E3_10/ProductPrinter/build/
