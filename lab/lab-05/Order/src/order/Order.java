@@ -3,14 +3,14 @@
  * or descending order, or "not in order" otherwise.
  */
 
-package e5_07;
+package order;
 import java.util.Scanner;
 
 /**
- *
+ * Assignment 5a
  * @author kbarr17
  */
-public class E5_07 
+public class Order 
 {
 
     public static void main(String[] args) 
@@ -24,11 +24,11 @@ public class E5_07
         int int2 = s.nextInt();
         int int3 = s.nextInt();
         
-        if (int1 >= int2 && int2 >= int3) 
+        if (int1 > int2 && int2 > int3) 
         {
             System.out.println("in decreasing order");
         }
-        else if (int1 <= int2 && int2 <= int3)
+        else if (int1 < int2 && int2 < int3)
         {
             System.out.println("in increasing order");
         }
