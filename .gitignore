@@ -14,3 +14,5 @@ handouts/
 
 # virtual machine crash logs
 hs_err_pid*
+/lab/lab-06/Loops/nbproject/private/
+/lab/lab-06/Loops/build/
