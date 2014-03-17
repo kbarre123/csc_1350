@@ -21,7 +21,7 @@ public class Loops
         for (a = 2; a <= 100; a+=2) {
             sumA += a;
         }
-        System.out.println(sumA);
+        System.out.println("a) sum = " + sumA);
         
         // b) Sum of all squares b/t 1 and 100 (inclusive)
         int b;
@@ -29,13 +29,14 @@ public class Loops
         for (b = 1; b <= 100; b++) {
             sumB += Math.pow(b, 2);
         }
-        System.out.println(sumB);
+        System.out.println("b) sum = " + sumB);
         
         // c) All powers of 2 from 2^0 up to 2^20
         int c;
         int sumC = 0;
+        System.out.println("c) ");
         for (c = 0; c <= 20; c++) {
-            System.out.printf("2^%d = %.0f\n", c, Math.pow(2, c));
+            System.out.printf("n = %d   2^n = %.1f\n", c, Math.pow(2, c));
         }
         
         /** 
@@ -45,7 +46,7 @@ public class Loops
         
         int d;
         int sumD = 0;
-        
+        System.out.println("d) ");
         Scanner in = new Scanner(System.in);
         
         System.out.println("Enter the first number: ");
@@ -71,12 +72,15 @@ public class Loops
         }
         
         // P6.1
+        System.out.println("P6.1) ");
         System.out.println("Enter a set of floating point numbers: ");
         double sum = 0;
         double sumSquare = 0;
         double n = 0;
         double currentNum = 0;
-        while (in.hasNextDouble()) {
+        
+        while (in.hasNextDouble()) 
+        {
             currentNum = in.nextDouble();
             sum = sum + currentNum;
             sumSquare += Math.pow(currentNum, 2);
@@ -87,7 +91,6 @@ public class Loops
         
         System.out.printf("Mean = %.2f\n", mean);
         System.out.printf("Standard Deviation = %.2f\n", standardDev);
-        
     }
     
     
