@@ -1,6 +1,7 @@
 /**
  * Class: CSC1350 Sec. 1
  * Lab: 6
+ * Dr. Duncan
  */
 
 package loops;
