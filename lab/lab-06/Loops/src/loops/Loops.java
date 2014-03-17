@@ -69,6 +69,7 @@ public class Loops
             System.out.println(sumD);
         }
         
+        // P6.1
         System.out.println("Enter a set of floating point numbers: ");
         double sum = 0;
         double sumSquare = 0;
