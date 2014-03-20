@@ -2,7 +2,6 @@ Java_Concepts_Early_Objects.pdf
 csc_1350_syllabus_spring_2014.pdf
 handouts/
 
-### Java ###
 *.class
 
 # Mobile Tools for Java (J2ME)
@@ -12,3 +11,8 @@ handouts/
 *.jar
 *.war
 *.ear
+
+# virtual machine crash logs
+hs_err_pid*
+/lab/lab-06/Loops/nbproject/private/
+/lab/lab-06/Loops/build/
