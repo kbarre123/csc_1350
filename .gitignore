@@ -14,10 +14,3 @@ handouts/
 
 # virtual machine crash logs
 hs_err_pid*
-/homework/ch07/ArrayTester/build/
-/lab/lab-08/SumWithout/nbproject/private/
-/lab/lab-08/SumWithout/build/
-/lab/lab-08/Reverse/nbproject/private/
-/lab/lab-08/Reverse/build/
-/lab/lab-08/RemoveMin/nbproject/private/
-/lab/lab-08/RemoveMin/build/
