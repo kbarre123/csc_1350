@@ -10,9 +10,10 @@ public class SumWithout
 
     public static void main(String[] args) 
     {
-        int[] random = new int[10];
+        final int LENGTH = 10;
+        int[] random = new int[LENGTH];
         
-        for (int i = 0; i < 10 ; i++)
+        for (int i = 0; i < random.length ; i++)
         {
              random[i] = (int)(Math.random()*100);
         }
