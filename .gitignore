@@ -14,3 +14,5 @@ handouts/
 
 # virtual machine crash logs
 hs_err_pid*
+/homework/ch07/ArrayConvertToArrayList/nbproject/private/
+/homework/ch07/ArrayConvertToArrayList/build/
