@@ -15,3 +15,4 @@ handouts/
 # virtual machine crash logs
 hs_err_pid*
 /lab/lab-09/SortTimer/nbproject/private/
+/lab/lab-09/SortTimer/build/
