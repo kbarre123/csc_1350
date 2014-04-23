@@ -1,6 +1,5 @@
 Java_Concepts_Early_Objects.pdf
 csc_1350_syllabus_spring_2014.pdf
-handouts/
 
 *.class
 
@@ -14,5 +13,3 @@ handouts/
 
 # virtual machine crash logs
 hs_err_pid*
-/lab/lab-09/SortTimer/nbproject/private/
-/lab/lab-09/SortTimer/build/
