@@ -1,7 +1,3 @@
-/*
- * Sort pets using File I/O. Need to bring in the PetSorter class from previous
- * example.
- */
 package petsorter;
 import java.util.*;
 import java.io.*;
@@ -17,7 +13,7 @@ public class PetSorter
         {
             String name;
             int age;
-            ArrayList<Pet> zoo2 = new ArrayList<Pet>();
+            ArrayList<Pet> zoo2 = new ArrayList<>();
             Scanner cin = new Scanner(System.in);
             System.out.print("Enter the input file name -> ");
             Scanner fileIn = new Scanner(new File(cin.next()));
@@ -35,12 +31,13 @@ public class PetSorter
             System.out.println("Unsorted Array of Pets");
             for (i=0; i<zoo.length; i++)
                 System.out.println(zoo[i]);
+            
             // sort the array using the comparable interface
             Arrays.sort(zoo);
-            System.out.print("Enter the output file name (array +name+age) -> ");
+            System.out.print("Enter the output file name (comparable_interface) -> ");
             PrintWriter fileOut = new PrintWriter(new File(cin.next()));
             // print the sorted array after sorting using the comparable interface   
-            System.out.println("Sorted Array of Pets After Sorting Using the Comparable Interface");
+            System.out.println("Sorted Array of Pets After Sorting Using the Comparable Interface (Arrays.sort(zoo))");
             for (i=0; i<zoo.length; i++)
             {
                 System.out.println(zoo[i]);             
@@ -49,15 +46,16 @@ public class PetSorter
             fileOut.close();
 
             // print the unsorted array array list		   
-            System.out.println("Unsorted Array List of Pets");
+            System.out.println("Unsorted Array List of Pets (zoo2.get(i))");
             for (i=0; i<zoo2.size(); i++)
                 System.out.println(zoo2.get(i));   
-
+            
+            
             // sort the array list using the comparable interface		   
             Collections.sort(zoo2);
-            System.out.print("Enter the output file name (array list +name+age) -> ");
+            System.out.print("Enter the output file name (Collections.sort(zoo2)) -> ");
             fileOut = new PrintWriter(new File(cin.next()));
-            // print the sorted array  list after sorting using the comparable interface  
+            // print the sorted array list after sorting using the comparable interface  
             System.out.println("Sorted Array List of Pets After Sorting Using the Comparable Interface");
             for (i=0; i<zoo2.size(); i++)
             {
@@ -68,7 +66,7 @@ public class PetSorter
             // Sort the array using a comparator and then
             // print the sorted array after sorting using the Comparator interface   
             Arrays.sort(zoo,new PetComparator());
-            System.out.print("Enter the output file name (array  -age+name) -> ");
+            System.out.print("Enter the output file name (Arrays.sort(zoo,new PetComparator()) -> ");
             fileOut = new PrintWriter(new File(cin.next()));            
             System.out.println("Sorted Array of Pets After Sorting Using a Comparator");
             for (i=0; i<zoo.length; i++)
@@ -81,7 +79,7 @@ public class PetSorter
             // Sort the array list using a comparator and then
             // print the sorted array list after sorting using the Comparator interface   
             Collections.sort(zoo2,new PetComparator());
-            System.out.print("Enter the output file name (array list -age+name) -> ");
+            System.out.print("Enter the output file name (Collections.sort(zoo2,new PetComparator()) -> ");
             fileOut = new PrintWriter(new File(cin.next()));         
             System.out.println("Sorted Array List of Pets After Sorting Using a Comparator");
             for (i=0; i<zoo2.size(); i++)

@@ -24,3 +24,4 @@ homework/*/dist/
 homework/*/nbdist/
 homework/*/nbactions.xml
 homework/*/nb-configuration.xml
+/homework/ch11/PetSorter/build/
