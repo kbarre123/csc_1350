@@ -32,7 +32,7 @@ public class ReadNums
             avg2 = sum2 / i;
             System.out.printf("Average1 = %.2f%n", avg1);
             System.out.printf("Average2 = %.2f%n", avg2);
-            //Close all the file streams before quitting the program.
+            //Close the file stream before quitting the program.
             fileIn.close();
         } 
         catch (FileNotFoundException e) 
