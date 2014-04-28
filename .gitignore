@@ -4,13 +4,12 @@ csc_1350_syllabus_spring_2014.pdf
 # Created by http://www.gitignore.io
 
 ### Java ###
-homework/*/*.class
-lab/*/*.class
+*/*/*.class
 
 # Package Files #
-homework/*/*.jar
-homework/*/*.war
-homework/*/*.ear
+*/*/*.jar
+*/*/*.war
+*/*/*.ear
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
