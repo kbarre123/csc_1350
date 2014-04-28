@@ -34,7 +34,6 @@ public class ReadNums {
             System.out.printf("Average2 = %.2f%n", avg2);
             //Close all the file streams before quitting the program.
             fileIn.close();
-            //fileOut.close();
         } 
         catch (FileNotFoundException e) 
         {
