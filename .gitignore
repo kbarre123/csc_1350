@@ -17,11 +17,10 @@ hs_err_pid*
 
 
 ### NetBeans ###
-homework/*/nbproject/private/
-homework/*/build/
-homework/*/nbbuild/
-homework/*/dist/
-homework/*/nbdist/
-homework/*/nbactions.xml
-homework/*/nb-configuration.xml
-/homework/ch11/PetSorter/build/
+homework/*/*/nbproject/private/
+homework/*/*/build/
+homework/*/*/nbbuild/
+homework/*/*/dist/
+homework/*/*/nbdist/
+homework/*/*/nbactions.xml
+homework/*/*/nb-configuration.xml

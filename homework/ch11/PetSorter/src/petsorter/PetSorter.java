@@ -32,6 +32,7 @@ public class PetSorter
             for (i=0; i<zoo.length; i++)
                 System.out.println(zoo[i]);
             
+            /* COMPARABLE SORT OF ARRAY */
             // sort the array using the comparable interface
             Arrays.sort(zoo);
             System.out.print("Enter the output file name (comparable_interface) -> ");
@@ -44,8 +45,9 @@ public class PetSorter
                 fileOut.println(zoo[i]);             
             }
             fileOut.close();
-
-            // print the unsorted array array list		   
+            
+            /* COMPARABLE SORT OF ARRAY LIST */
+            // print the unsorted array list		   
             System.out.println("Unsorted Array List of Pets (zoo2.get(i))");
             for (i=0; i<zoo2.size(); i++)
                 System.out.println(zoo2.get(i));   
@@ -63,6 +65,8 @@ public class PetSorter
                 fileOut.println(zoo2.get(i));   
             }
             fileOut.close();
+            
+            /* COMPARATOR SORT OF ARRAY */
             // Sort the array using a comparator and then
             // print the sorted array after sorting using the Comparator interface   
             Arrays.sort(zoo,new PetComparator());
@@ -76,6 +80,7 @@ public class PetSorter
             }
             fileOut.close();
 
+            /* COMPARATOR SORT OF ARRAY LIST */
             // Sort the array list using a comparator and then
             // print the sorted array list after sorting using the Comparator interface   
             Collections.sort(zoo2,new PetComparator());
