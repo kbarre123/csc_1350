@@ -1,0 +1,3 @@
+Barrett,	 Kenneth	 89.00
+Williams,	 Tom	 61.50
+Stevenson,	 Steven	 71.50

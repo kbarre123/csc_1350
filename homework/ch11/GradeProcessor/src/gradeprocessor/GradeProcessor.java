@@ -23,12 +23,12 @@ public class GradeProcessor
             String firstName, lastName, fileName;
             double test1, test2, avg;
             Scanner cin = new Scanner(System.in);
-            fileName = "C:\\Users\\kbarr17\\Documents\\GitHub\\csc_1350\\homework\\ch11\\GradeProcessor";
+            //fileName = "C:\\Users\\kbarr17\\Documents\\GitHub\\csc_1350\\homework\\ch11\\GradeProcessor\\gradesIn.txt.txt";
             
             // Getting the name of the input file and creating
             // a scanner object to read the data from the file.
-            //System.out.print("Enter the input file name -> ");
-            Scanner fileIn = new Scanner(new File(fileName));
+            System.out.print("Enter the input file name -> ");
+            Scanner fileIn = new Scanner(new File(cin.next()));
             
             
             // Getting the name of the output file and creating
