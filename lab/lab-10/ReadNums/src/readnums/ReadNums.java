@@ -7,8 +7,8 @@ package readnums;
 import java.io.*;
 import java.util.*;
 
-public class ReadNums {
-
+public class ReadNums 
+{
     /**
      * @param args the command line arguments
      */
