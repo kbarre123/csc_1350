@@ -1,7 +1,0 @@
-1. See program in /SC_01.
-2. The private instance variables are accessed through the public methods that interact with them. So, in your main program, if you
-called the .getHour() method on a clock object, you'd presumably be able to have the current hour value returned.
-3. You'd have to look in the .click() method.
-4. 
-5. Um, users of the software? If the banks are allowed access to the software in order to automatically update the users' bank account balances,
-then the banks as well.
