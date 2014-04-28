@@ -6,15 +6,16 @@ a) Trace the action of the insertion sort algorithm on
    the list array, showing the contents of the array after
    each insertion.
    
-   Ans:                                           #key comparisons     #shifts/transfers
-insertion # 1: 4 5 | 32 6 4 6 5                   1                    1 
-          # 2: 4 5 32 | 6 4 6 5                   1                    1
-          # 3: 4 5 6 32 | 4 6 5                   2                    2 
-          # 4: 4 4 5 6 32 | 6 5                   4                    4
-          # 5: 4 4 5 6 6 32 | 5                   2                    2
-          # 6: 4 4 5 5 6  6  32                   4                    4
+   Ans:   insertion                       #key comparisons     #shifts/transfers
+ 	  # 1: 4 5 | 32 6 4 6 5           1                    1 
+          # 2: 4 5 32 | 6 4 6 5           1                    1
+          # 3: 4 5 6 32 | 4 6 5           2                    2 
+          # 4: 4 4 5 6 32 | 6 5           4                    4
+          # 5: 4 4 5 6 6 32 | 5           2                    2
+          # 6: 4 4 5 5 6  6  32           4                    4
 
 b) How many shifts/data transfers are required to sort the array?
+   
    Ans: 14 transfers	
    
 c) How many key-comparisons are done during the 
