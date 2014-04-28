@@ -1,0 +1,32 @@
+4/21: Sorting Real-World Data - Using the Comparable and Comparator Interfaces
+
+We have discussed two elementary algorithms that may be used to sort data: insertion sort
+and selection sort. These algorithms are not order optimal; that is, they are inefficient.
+Java has built-in API methods that may be used to sort arrays and array list.
+
+To sort an array, use the following statement.
+
+Arrays.sort(arrayName);
+
+This method requires that you import the java.util package since the Arrays class is
+defined in this package.
+
+To sort an array list, use the follwing statment.
+
+Collections.sort(arrayListName);
+
+Like, the Arrays.sort method, the Collections.sort method requires the java.util package.
+
+If the array or array list contains primitive types such as double, char and int, that is all
+you need to do.
+
+It becomes a little more elaborate, when you are sorting objects. In order to sort an array
+or array list of objects, the class that the objects belong to must implement the Comparable
+interface. The objects in the array or array list are then arranged using the compareTo
+method defined in the class.
+
+There are occasions when the order derived from the compareTo method may not be the order we
+wish to use when sorting the data. In that case, we define a class that implements the
+Comparator interface. The class could be an external class. See the sample program on how to 
+define a class that implements the comparator interface and how to use an object of that class
+to sort data.
