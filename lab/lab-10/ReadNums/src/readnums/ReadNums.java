@@ -37,7 +37,7 @@ public class ReadNums {
         } 
         catch (FileNotFoundException e) 
         {
-            System.out.println("File twoColumns.dat not found");
+            System.out.println("File twoColumns.dat not found.");
             System.exit(2);
         }
     }
