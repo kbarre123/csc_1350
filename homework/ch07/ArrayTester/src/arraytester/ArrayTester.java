@@ -58,7 +58,26 @@ public class ArrayTester
         System.out.println(Arrays.toString(words));
         
         
-        // SC # 7: 
+        // SC #17: 
+        int[] values = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+        /*System.out.print(values[0]);
+        for (int i = 1; i < values.length; i++)
+        {
+            System.out.print(", " + values[i]);
+        }
+        System.out.println();
+        */
+        
+        // SC #18
+        boolean found = false;
+        for (int pos = 0; pos < values.length && !found; pos++)
+        {
+            if (values[pos] > 7)
+            {
+                found = true;
+            }
+        }
+        System.out.println(found);
     }
     
 }

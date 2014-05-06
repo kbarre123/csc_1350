@@ -1,0 +1,9 @@
+Tom	Lodging		231
+Nina	Dinner		98
+Romeo	Conference	125
+Harry	Dinner		117
+Juliet	Conference	275
+Mary	Lodging		342
+Bill	Conference	235
+Amy	Lodging		197
+Karen	Dinner		72
