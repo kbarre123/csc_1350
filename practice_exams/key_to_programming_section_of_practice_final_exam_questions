@@ -1,0 +1,87 @@
+CSC 1350 Practice Final Exam
+Programming Section Key
+-------------------------------------
+1. implements Comparable<CensusData>
+
+2.  if (sCode.length() < 2 || sCode.toUpperCase().charAt(0) < 'A' || sCode.toUpperCase().charAt(0) > 'Z'
+        || sCode.toUpperCase().charAt(1) < 'A' || sCode.toUpperCase().charAt(1) > 'Z')
+       throw new IllegalArgumentException("Invalid State Abbreviation);
+    if (pInMil <= 0)
+       throw new IllegalArgumentException("Population must be postive");
+    state = sCode;
+    popInMil = pInMil;
+	
+    or, alternatively
+	
+    if (sCode.length() < 2 || !Character.isLetter(sCode.charAt(0)) || !Character.isLetter(sCode.charAt(1)))
+       throw new IllegalArgumentException("Invalid State Abbreviation);
+    if (pInMil <= 0)
+       throw new IllegalArgumentException("Population must be postive");
+    state = sCode;
+    popInMil = pInMil;
+	
+3. return state;
+
+4. return popInMil;
+
+5. if (state.compareToIgnoreCase(s) < 0)
+      return -1;
+   if (state.compareToIgnoreCase(s) > 0)
+      return 1;
+   if (popInMil < s.popInMil)
+      return -1;
+   if (popInMil > s.popInMil)
+      return 1;
+   return 0;
+
+6. return String.format(" [%s, %.3fM]",state,popInMil);
+
+7. import java.util.*;
+   public class CensusDataComp implements Comparator<CensusData>
+   {
+      public int compare(CensusData cd1, CensusData cd2)
+      {
+         if (cd1.getPopInMi() < cd2.getPopInMil())
+            return -1;
+         if (cd1.getPopInMi() > cd2.getPopInMil())
+            return 1;
+         if (cd1.getState().compareToIgnoreCase(cd2.getState()) < 0)
+            return -1;		 
+         if (cd1.getState().compareToIgnoreCase(cd2.getState()) > 0)
+            return -1;		   
+         return 0;
+      }
+   }
+    	
+8.  ArrayList<CensusData>  census = new ArrayList<CensusData>();
+
+9.  Scanner cin = new Scanner(System.in);
+    System.out.print("Enter the name of the input file -> ");
+    Scanner inFile = new Scanner(new File(cin.next()));
+    while(inFile.hasNext())
+    {
+       census.add(cin.next(), cin.nextDouble());
+    }
+    inFile.close();
+
+10. CensusData[] dataArray = census.toArray(new CensusData[census.size()]);
+
+11. Collections.sort(census);
+    System.out.println("Census Data Sorted By State Abbreviation and Population");
+    int i;
+    for (i=0; i<census.size(); i++)
+       System.out.println(census.get(i));
+	   
+12. Arrays.sort(dataArray, new CensusDataComp());
+
+13. System.out.print("Enter the name of the output file-> ");
+    PrintWriter outFile = new PrintWriter(new File(cin.next()));
+    for (i=0; dataArray.length; i++)
+       outFile.printf("%s, %-.3f%n",dataArray[i].getState(), dataArray[i].getPopInMil());
+    outFile.close();
+
+14. catch(IOException e)
+    {
+       System.out.println(e);
+       System.exit(2);
+   }

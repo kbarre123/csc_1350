@@ -52,11 +52,11 @@ public class ArrayTester
         String[] words = new String[10];
         */
         
-        /*
+        
         // SC #6: Array of strings
         String[] words = {"Yes", "No"};
         System.out.println(Arrays.toString(words));
-        */
+        
         
         // SC # 7: 
     }
